@@ -1,0 +1,23 @@
+<!-- Cloudflare Submenu -->
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1rem; margin-bottom: 2rem;">
+  
+  <div style="font-weight: bold; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Cloudflare Security
+  </div>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    {% if include.lang == "en" %}
+    <a href="{{ '/en/cloudflare/custom-rules/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'custom-rules' %}background: #3b82f6; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Custom Rules</a>
+    <a href="{{ '/en/cloudflare/rate-limiting/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'rate-limiting' %}background: #3b82f6; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Rate Limiting</a>
+    <a href="{{ '/en/cloudflare/ip-access/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'ip-access' %}background: #3b82f6; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">IP Access</a>
+    <a href="{{ '/en/cloudflare/expressions/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'expressions' %}background: #3b82f6; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Expressions</a>
+    {% else %}
+    <a href="{{ '/pt/cloudflare/custom-rules/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'custom-rules' %}background: #22c55e; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Custom Rules</a>
+    <a href="{{ '/pt/cloudflare/rate-limiting/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'rate-limiting' %}background: #22c55e; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Rate Limiting</a>
+    <a href="{{ '/pt/cloudflare/ip-access/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'ip-access' %}background: #22c55e; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">IP Access</a>
+    <a href="{{ '/pt/cloudflare/expressions/' | relative_url }}" style="padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; {% if include.active == 'expressions' %}background: #22c55e; color: white;{% else %}background: rgba(255,255,255,0.05); color: inherit; border: 1px solid rgba(255,255,255,0.1);{% endif %}">Expressions</a>
+    {% endif %}
+  </div>
+  
+</div>

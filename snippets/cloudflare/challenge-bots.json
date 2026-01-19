@@ -1,0 +1,6 @@
+{
+  "description": "Challenge suspicious bots - empty user agent or known bot tools",
+  "expression": "(http.user_agent eq \"\") or (http.user_agent contains \"curl\") or (http.user_agent contains \"wget\") or (http.user_agent contains \"python-requests\") or (http.user_agent contains \"Go-http-client\")",
+  "action": "managed_challenge",
+  "enabled": true
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Protect API endpoints - require Authorization header",
+  "expression": "(http.request.uri.path starts_with \"/api/\") and not (http.request.uri.path starts_with \"/api/public/\") and (len(http.request.headers[\"authorization\"][0]) eq 0)",
+  "action": "block",
+  "action_parameters": {
+    "response": {
+      "status_code": 401,
+      "content": "{\"error\": \"unauthorized\", \"message\": \"Authorization header required\"}",
+      "content_type": "application/json"
+    }
+  },
+  "enabled": true
+}

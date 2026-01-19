@@ -1,0 +1,13 @@
+{
+  "description": "Block access to admin routes except allowed IPs",
+  "expression": "(http.request.uri.path contains \"/admin\") and not (ip.src in {REPLACE_WITH_YOUR_IP})",
+  "action": "block",
+  "action_parameters": {
+    "response": {
+      "status_code": 403,
+      "content": "Access Denied",
+      "content_type": "text/plain"
+    }
+  },
+  "enabled": true
+}

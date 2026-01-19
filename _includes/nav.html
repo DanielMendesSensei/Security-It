@@ -1,0 +1,34 @@
+<!-- Navigation Component -->
+<nav style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); flex-wrap: wrap; gap: 0.5rem;">
+
+  <!-- Back Button -->
+  <a href="{{ include.back_url | default: '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; opacity: 0.8; font-size: 0.9rem; transition: opacity 0.2s;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    {{ include.back_text | default: "Back" }}
+  </a>
+
+  <!-- Breadcrumb -->
+  <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; opacity: 0.7;">
+    <a href="{{ '/' | relative_url }}" style="color: inherit; text-decoration: none;">Home</a>
+    {% if include.section %}
+    <span>/</span>
+    <a href="{{ include.section_url | relative_url }}" style="color: inherit; text-decoration: none;">{{ include.section }}</a>
+    {% endif %}
+    {% if include.current %}
+    <span>/</span>
+    <span>{{ include.current }}</span>
+    {% endif %}
+  </div>
+
+  <!-- Language Toggle -->
+  <div style="display: flex; gap: 0.5rem;">
+    {% if include.lang == "en" %}
+    <a href="{{ include.pt_url | relative_url }}" style="padding: 0.25rem 0.75rem; border-radius: 4px; text-decoration: none; font-size: 0.8rem; background: transparent; border: 1px solid rgba(255,255,255,0.2); color: inherit;">PT</a>
+    <span style="padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; background: #3b82f6; color: white;">EN</span>
+    {% else %}
+    <span style="padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; background: #22c55e; color: white;">PT</span>
+    <a href="{{ include.en_url | relative_url }}" style="padding: 0.25rem 0.75rem; border-radius: 4px; text-decoration: none; font-size: 0.8rem; background: transparent; border: 1px solid rgba(255,255,255,0.2); color: inherit;">EN</a>
+    {% endif %}
+  </div>
+
+</nav>

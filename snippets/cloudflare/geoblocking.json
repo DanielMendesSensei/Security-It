@@ -1,0 +1,13 @@
+{
+  "description": "Block traffic from specific countries - adjust list as needed",
+  "expression": "(ip.geoip.country in {\"CN\" \"RU\" \"KP\" \"IR\"})",
+  "action": "block",
+  "action_parameters": {
+    "response": {
+      "status_code": 403,
+      "content": "Access from your region is not allowed",
+      "content_type": "text/plain"
+    }
+  },
+  "enabled": true
+}
