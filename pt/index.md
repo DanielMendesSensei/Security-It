@@ -19,10 +19,10 @@ Bem-vindo ao **Security-IT** - um repositório open-source com dicas práticas d
 
 Regras prontas para copiar e usar no seu projeto:
 
-- **[Custom Rules](/pt/cloudflare/custom-rules)** - Bloqueie acessos indesejados com regras personalizadas
-- **[Rate Limiting](/pt/cloudflare/rate-limiting)** - Proteja suas APIs e rotas de login
-- **[IP Access Rules](/pt/cloudflare/ip-access)** - Gerencie whitelist e blacklist de IPs
-- **[WAF Expressions](/pt/cloudflare/expressions)** - Biblioteca de expressões prontas
+- **[Custom Rules]({{ '/pt/cloudflare/custom-rules/' | relative_url }})** - Bloqueie acessos indesejados com regras personalizadas
+- **[Rate Limiting]({{ '/pt/cloudflare/rate-limiting/' | relative_url }})** - Proteja suas APIs e rotas de login
+- **[IP Access Rules]({{ '/pt/cloudflare/ip-access/' | relative_url }})** - Gerencie whitelist e blacklist de IPs
+- **[WAF Expressions]({{ '/pt/cloudflare/expressions/' | relative_url }})** - Biblioteca de expressões prontas
 
 ### Em breve
 

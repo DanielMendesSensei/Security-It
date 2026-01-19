@@ -19,10 +19,10 @@ Welcome to **Security-IT** - an open-source repository with practical security t
 
 Ready-to-use rules for your project:
 
-- **[Custom Rules](/en/cloudflare/custom-rules)** - Block unwanted access with custom rules
-- **[Rate Limiting](/en/cloudflare/rate-limiting)** - Protect your APIs and login routes
-- **[IP Access Rules](/en/cloudflare/ip-access)** - Manage IP whitelist and blacklist
-- **[WAF Expressions](/en/cloudflare/expressions)** - Library of ready-to-use expressions
+- **[Custom Rules]({{ '/en/cloudflare/custom-rules/' | relative_url }})** - Block unwanted access with custom rules
+- **[Rate Limiting]({{ '/en/cloudflare/rate-limiting/' | relative_url }})** - Protect your APIs and login routes
+- **[IP Access Rules]({{ '/en/cloudflare/ip-access/' | relative_url }})** - Manage IP whitelist and blacklist
+- **[WAF Expressions]({{ '/en/cloudflare/expressions/' | relative_url }})** - Library of ready-to-use expressions
 
 ### Coming Soon
 

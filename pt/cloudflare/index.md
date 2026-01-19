@@ -15,7 +15,7 @@ Guias práticos para proteger suas aplicações usando os recursos de segurança
 
 ## Categorias
 
-### [Custom Rules](/pt/cloudflare/custom-rules)
+### [Custom Rules]({{ '/pt/cloudflare/custom-rules/' | relative_url }})
 Regras personalizadas para bloquear, desafiar ou permitir trafego baseado em condicoes especificas.
 
 **Casos de uso:**
@@ -25,7 +25,7 @@ Regras personalizadas para bloquear, desafiar ou permitir trafego baseado em con
 
 ---
 
-### [Rate Limiting](/pt/cloudflare/rate-limiting)
+### [Rate Limiting]({{ '/pt/cloudflare/rate-limiting/' | relative_url }})
 Controle a quantidade de requisicoes por IP, usuario ou endpoint.
 
 **Casos de uso:**
@@ -35,7 +35,7 @@ Controle a quantidade de requisicoes por IP, usuario ou endpoint.
 
 ---
 
-### [IP Access Rules](/pt/cloudflare/ip-access)
+### [IP Access Rules]({{ '/pt/cloudflare/ip-access/' | relative_url }})
 Gerencie whitelist e blacklist de IPs, ASNs e paises.
 
 **Casos de uso:**
@@ -45,7 +45,7 @@ Gerencie whitelist e blacklist de IPs, ASNs e paises.
 
 ---
 
-### [Expressions Library](/pt/cloudflare/expressions)
+### [Expressions Library]({{ '/pt/cloudflare/expressions/' | relative_url }})
 Biblioteca de expressoes prontas para usar em suas regras.
 
 **Inclui:**
